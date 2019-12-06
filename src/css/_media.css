@@ -1,0 +1,318 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  header {
+    grid-template-columns: min-content 1fr min-content;
+  }
+  header .sv-header-navigation ul {
+    position: fixed;
+    top: 0;
+    right: -230px;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: right;
+    background: #0c54a0;
+    width: 185px;
+    height: 100vh;
+    padding-top: 15px;
+    padding-right: 45px;
+    transition: all .3s ease;
+  }
+
+  .show_m {
+    right: 0 !important;
+  }
+
+  header .sv-header-navigation ul li {
+    margin: 15px 0;
+    color: white;
+  }
+
+  header .sv-header-telephone .sv-toggle-menu {
+    display: block;
+  }
+
+  header .sv-header-telephone i {
+    top: 5px;
+    margin-right: 25px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  header {
+    padding: 15px 25px;
+    width: calc(100% - 50px);
+  }
+
+  .sv-rental .sv-rental-bricks .sv-tab-content {
+    flex-direction: column;
+  }
+
+  .sv-rental .sv-rental-bricks .sv-rental-content, .sv-rental .sv-rental-bricks .sv-rental-background {
+    width: 100%;
+  }
+
+  .sv-news .sv-news-bricks,
+  .sv-markets .sv-markets-bricks,
+  .sv-home .sv-home-bricks,
+  .sv-rental .sv-rental-bricks {
+    padding: 25px 50px;
+  }
+
+  .sv-rental .sv-rental-bricks .sv-rental-content {
+    margin-bottom: 25px;
+  }
+
+  .sv-footer .sv-footer-subscibe {
+    padding: 45px 0;
+  }
+
+  .sv-map .sv-map-tabs {
+    flex-direction: column;
+    padding: 0 25px;
+  }
+
+  .sv-map-tab-content {
+    padding: 0 45px;
+  }
+
+  .sv-rental .sv-rental-tabs .sv-tab-button {
+    width: calc(100% - 50px);
+    margin: 0 25px;
+  }
+
+  .sv-map .sv-map-tabs .sv-map-tab-button {
+      width: calc(100% - 50px);
+      margin: 5px 25px;
+  }
+
+  .sv-markets .sv-markets-bricks article img.sv-markets-background,
+  .sv-rental .sv-rental-bricks .sv-rental-background {
+    height: 248px;
+  }
+
+  .sv-markets .sv-markets-bricks {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sv-markets .sv-markets-bricks article .sv-markets-content {
+    position: static;
+    color: #333;
+    opacity: 1;
+    background: none;
+  }
+
+  .sv-markets .sv-markets-bricks article .sv-markets-content .sv-image {
+    position: absolute;
+    top: 45px;
+    left: 15px;
+  }
+
+  .sv-markets .sv-markets-bricks article .sv-markets-content h4 {
+    padding: 0 25px;
+    margin: 20px 0;
+  }
+
+  .sv-markets .sv-markets-bricks article:first-child {
+    padding: 0 0 25px 0;
+  }
+
+  .sv-markets .sv-markets-bricks article:last-child {
+    padding: 25px 0 0 0;
+  }
+
+  .sv-markets .sv-markets-bricks article .sv-markets-content p {
+    padding: 0;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .sv-rental .sv-rental-bricks .sv-tab-content h4,
+  .sv-markets .sv-markets-bricks article .sv-markets-content h4,
+  section h1 {
+    font-size: 1.45em;
+    padding: 0;
+  }
+
+  .sv-rental .sv-rental-bricks .sv-tab-content p {
+    padding: 0;
+  }
+
+  .sv-footer footer {
+    padding: 45px 25px;
+  }
+
+  .sv-page {
+    padding: 0 65px 65px 65px;
+  }
+
+  .sv-page .sv-page-content {
+    margin-bottom: 0;
+  }
+
+  .sv-rental .sv-rental-tabs .sv-tab-button {
+    width: calc(100% - 90px);
+    margin: 10px 45px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .sv-footer footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 15px;
+  }
+
+  .sv-news .sv-news-bricks, .sv-markets .sv-markets-bricks, .sv-home .sv-home-bricks, .sv-rental .sv-rental-bricks {
+    padding: 25px;
+  }
+
+  .sv-rental .sv-rental-bricks .sv-tab-content h4,
+  .sv-markets .sv-markets-bricks article .sv-markets-content h4,
+  section h1 {
+    font-size: 1.25em;
+  }
+
+  .sv-page {
+    padding: 0 45px 45px 45px;
+  }
+
+  .sv-news .sv-news-bricks, .sv-markets .sv-markets-bricks, .sv-home .sv-home-bricks {
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sv-news .sv-news-bricks article, .sv-markets .sv-markets-bricks article, .sv-home .sv-home-bricks article {
+    margin: 15px 0;
+  }
+
+  .sv-news .sv-news-bricks article .sv-image, .sv-markets .sv-markets-bricks article .sv-image, .sv-home .sv-home-bricks article .sv-image {
+    height: 186px;
+  }
+
+  .sv-footer footer .sv-footer-addition,
+  .sv-footer footer .sv-footer-adress,
+  .sv-footer footer .sv-footer-social,
+  .sv-footer footer .sv-footer-copyright {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  .sv-footer footer .sv-footer-adress span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+  }
+
+  .sv-item-content h2,
+  .sv-footer .sv-footer-subscibe h2 {
+    font-size: 1.25em;
+    padding: 0 25px;
+  }
+
+  .sv-item-content p {
+    font-size: 1em;
+    padding: 0 25px;
+  }
+
+  .carousel-arrow {
+    display: none;
+  }
+
+  header {
+    padding: 15px 0;
+    width: 100%;
+  }
+
+  header .sv-header-logotype {
+    width: 156px;
+    margin-left: 20px;
+  }
+
+  .sv-news .sv-news-bricks, .sv-home .sv-home-bricks,
+  .sv-home .sv-home-carousel {
+    margin-bottom: 0;
+  }
+
+  header .sv-header-telephone {
+    margin-right: 20px;
+  }
+
+  .sv-item-content button {
+    margin: 20px 30px;
+    width: calc(100% - 60px);
+    font-size: 1em;
+  }
+
+  .sv-item-content ul li {
+    margin: 10px 30px;
+    width: calc(100% - 60px);
+  }
+
+  .sv-footer .sv-footer-subscibe {
+    padding: 25px 0;
+  }
+
+  .sv-markets .sv-markets-bricks {
+    margin-bottom: 0px;
+  }
+
+  .sv-rental .sv-rental-tabs .sv-tab-button {
+    width: calc(100% - 50px);
+    margin: 5px 25px;
+    font-size: .85em;
+  }
+
+  .sv-map .sv-map-tabs {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .sv-map-tab-content {
+    padding: 0 25px;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+  .sv-page {
+    padding: 0 25px 25px 25px;
+  }
+}
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+  /**/
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  /**/
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  /**/
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
